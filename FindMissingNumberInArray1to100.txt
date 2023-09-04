@@ -1,0 +1,14 @@
+public class MissingNumberInArray {
+    public static void main(String args[]){
+        int a[]={1,2,3,4,6};
+        int expeted_num=a.length+1;
+        int total_sum=(expeted_num*(expeted_num+1))/2;
+        // logic is total number in a is 5 and expeted element should be expeted element+expted+1/2
+        int current_sum=0;
+        for(int i: a){
+            current_sum+=i;
+        }
+        int missing_num=total_sum-current_sum;
+        System.out.println("missing number is :"+missing_num);
+    }
+}
