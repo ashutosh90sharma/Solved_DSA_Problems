@@ -1,0 +1,19 @@
+import java.util.Set;
+
+public class FindDuplicateInArray {
+    public static void main(String[] args) {
+        int a[]={2, 10,10, 100, 2,8, 10, 11,2,11,2,3,7};
+        System.out.print("Dublicate in this array is:");
+
+       //by set
+        Set<Integer> s=new HashSet<>();
+        for( int x: a){
+            if(s.add(x)==false){
+                System.out.println(x);
+            }
+        }
+      
+
+
+    }
+}
